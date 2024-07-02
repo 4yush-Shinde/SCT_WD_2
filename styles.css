@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/abstract-geometric-round-shape-blue-background-design_1017-42785.jpg?w=996&t=st=1719804751~exp=1719805351~hmac=f1f40b78a484d8d0e4a1d767a66ccceae42e744c2ee03526264394da9bbda242'); /* Path to your image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    backdrop-filter: blur(15px);;
+}
+
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px 0;
+    color: rgb(79, 102, 216);
+    z-index: 2;
+}
+
+.header-content {
+   width: 10%;
+    margin:  auto;
+   /* display: flex;
+    /*justify-content: space-between;*/
+    /*Align-items: center;*/
+    text-align: center;
+}
+
+
+.stopwatch {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#pause {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#reset {
+    background-color: #d9534f;
+    color: white;
+}
+
+#lap {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.laps {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
