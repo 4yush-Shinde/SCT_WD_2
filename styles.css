@@ -10,7 +10,7 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
-    backdrop-filter: blur(15px);;
+    backdrop-filter: blur(15px);
 }
 .mail{
     color: #fff;
@@ -154,6 +154,7 @@ footer {
     align-self: center;
     margin-left: 5px;
     border-radius: 7px;
+    padding-bottom: 4px;
 }
 
 .logo {
@@ -163,4 +164,26 @@ footer {
     margin-bottom: 7px;
     margin-left: 20px;
    
+}
+
+.logo #github:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    
+}
+
+.logo #linkedin:hover {
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+    
+}
+
+.logo #github:active {
+    transform: scale(0.8);
+    
+}
+
+.logo #linkedin:active {
+    transform: scale(0.8);
+    
 }
