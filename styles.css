@@ -21,12 +21,25 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    /* background-color: rgba(0, 0, 0, 0.5);  */
     padding: 20px 0;
     color: rgb(79, 102, 216);
     z-index: 2;
     border-radius: 7px;
 }
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('Fonts/recoleta-regulardemo.otf') format('woff2');
+
+  }
+
+
+  header h1 {
+    font-size: 3em;
+    font-family: 'Recoleta', sans-serif;
+
+  }
 
 .header-content {
    /* width: 10%; */
@@ -36,6 +49,7 @@ body {
     /*Align-items: center;*/
     text-align: center;
     color: #f0f0f0;
+    
 }
 nav {
     position: absolute;
@@ -54,7 +68,7 @@ nav ul li {
     margin-left: 1em;
 }
 
-nav ul li a {
+/* nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
@@ -65,16 +79,60 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #555;
+} */
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    /* background-color: #444; */
+    box-shadow: 0 0 10px rgba(7, 112, 232, 0.6);
+
+    border-radius: 5px;
+    
 }
 
-.stopwatch {
+nav ul li a:hover {
+    
+    
+    box-shadow: 0 0 20px rgba(0, 17, 255, 0.588);
+
+    background-color: #55555543;
+
+ 
+
+   
+}
+
+/* .stopwatch {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+} */
+
+.stopwatch {
+    color: #fff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(7, 112, 232, 0.612);
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 50%;
+    text-align: center;
+
+
+} 
+
+.stopwatch:hover {
+    box-shadow: 0 0 20px rgba(0, 17, 255, 0.584);
+
 }
+
+
+
 
 #display {
     font-size: 48px;
@@ -99,19 +157,38 @@ nav ul li a:hover {
     color: white;
 }
 
+#start:hover {
+    background-color: #4caf4fb3;
+}
+
 #pause {
     background-color: #f0ad4e;
     color: white;
 }
 
+#pause:hover {
+    background-color: #f0ac4eb9;
+}
+
 #reset {
-    background-color: #d9534f;
+    background-color: #ff0800;
     color: white;
 }
 
+#reset:hover {
+    background-color: #ff0800a9;
+    
+}
+
+
 #lap {
-    background-color: #5bc0de;
+    background-color: #1ebff0;
     color: white;
+}
+
+#lap:hover {
+    background-color: rgba(91, 192, 222, 0.668);
+    
 }
 
 .laps {
@@ -145,7 +222,8 @@ footer {
 
 
 .translucent-footer {
-    background-color: rgba(0, 0, 0, 0.5); 
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    background-color: rgba(54, 53, 53, 0.704); 
     color: white;
     padding: 20px;
     text-align: center;
